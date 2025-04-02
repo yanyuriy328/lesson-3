@@ -1,27 +1,44 @@
+@import '../fonts/icomoon/style.css';
+
 body {
+    font-size: 30px;
+    font-weight: bold;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #acd7e4;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
-    background: #acd7e4;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgb(194, 235, 250);
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
+    font-family: 'Arial Black', Gadget, sans-serif;
 }
 
 nav ul {
@@ -29,6 +46,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 nav ul li {
@@ -39,32 +57,58 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .social-media a {
     text-decoration: none;
-    color: #333;
-    font-size: 20px;
-    margin-left: 15px;
+    color: #0529f5;
+    font-size: 25px;
+    margin-left: 100px;
+    letter-spacing: 0px;
+    margin: 0 5px;
 }
 
 .About {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     text-align: left;
-    background: #acd7e4;
+    background: rgb(194, 235, 250);
+    padding-top: 100px;
+    width: 100%;
+    padding: 40px 20px;
 }
 
 .About .container {
     display: flex;
-    align-items: center;
     gap: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
 }
 
 .text {
-    max-width: 1000px;
+    max-width: 500px;
+    text-align: left;
+    width: 50%;
+    line-height: 5px;
+    font-weight: lighter;
+}
+
+.text h2 {
+    font-size: 80px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    letter-spacing: normal;
+}
+
+.role {
+    font-size: 50px;
+    color: blue;
 }
 
 h2 span {
@@ -72,16 +116,35 @@ h2 span {
 }
 
 .button {
-    display: inline-block;
-    background: #007bff;
+    background: rgb(70, 86, 231);
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 10px;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 10px;
+    font-size: 25px;
 }
 
 .image img {
-    width: 500px;
     border-radius: 50%;
+    position: absolute; right: 13%; bottom: 10%
+}
+
+img {
+    width: 500px;
+}
+
+.bord {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(194, 235, 250);
+    size: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
